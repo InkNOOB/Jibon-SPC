@@ -144,10 +144,11 @@
     color: var(--dark);
 }
 .header_left ul li a:hover{
-    color: var(--green);
+    color: darkred;
 }
 .header_left img{
     width: 10rem;
+
 }
 
 /* RIGHT */
@@ -167,26 +168,193 @@
 
 
 
-/* BANNERT */
+/* BANNER */
 .banner{
-    background:var(--gray);
-    padding-top:5rem;
+  background-color: var(--gray);
+  padding-top: 5rem;
+}
+.banner_wrapper{
+ display: flex;
+}
+.banner_left{
+  padding-left: 15rem;
+  padding-top: 25rem;
 }
 .banner_left h1{
-    font-size:14rem;
-    line-height:1;
-    max-width:80rem;
+  font-size: 10rem;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.banner_left h1 span{
+  color:rgb(99, 5, 5);
 }
 .banner_right{
-    position:relative;
-    left:140rem;
-    bottom:-2rem
+  position: relative;
+  left:5rem;
+  top: 0;
 }
 .banner_right img{
-    width: 50rem;
-
+  width:100rem;
+  height: 70rem;
 }
 
+/* ABOUT ME */
+  .about{
+    background:var(--light);
+  }
+  .about_wrapper{
+    display:flex;
+    flex-direction:row-reverse
+
+  }
+  .about_right{
+    padding-left:20rem;
+  }
+  .about_right h1{
+    color:rgb(85, 5, 5);
+    font-size:7rem;
+  }
+  .about_right p{
+    width:60rem;
+    font-size:2rem;
+  }
+  .about_right p span{
+    font-weight:600;
+  }
+  .about_left img{
+    max-width:70rem;
+    height:60rem;
+    border-radius:2rem;
+    background:rgb(61, 61, 61);
+    transform:translateY(-1rem);
+  }
+  .about_right ul.about_title{
+    display:flex;
+    padding-top:3rem;
+    gap:10rem;
+    font-weight:600;
+    font-size:2rem;
+  } 
+  .about_right li{
+    color:var(--dark);
+  }
+  .about_right ul.main_skills p{
+    padding-top:4rem;
+  }
+  .about_right ul.closed{
+  display:none;
+  }
+  .about_right li {
+    display: inline;
+  }
+  .about_right li {
+    text-decoration: none;
+    position: relative; /* Set position to relative */
+  }
+  .about_right li::after {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    bottom: -3px; /* Adjust the distance of the line from the text */
+    left: 0; /* Start from the left */
+    width: 0; /* Extend the line across the link */
+    border-bottom: 2px solid transparent; /* Initially transparent */
+    transition:300ms; /* Smooth transition effect */
+  }
+  .about_right li:hover::after {
+    border-color: red; /* Change the color of the line on hover */
+    width: 100%;
+  }
+  .about_right li:hover {
+    color: darkred;
+    transition: 0.5 ease-in-out;
+  }
+  .about_right li.open {
+    color: darkred;
+    transition: 0.5 ease-in-out;
+  }
+
+  
+/* SERVICES */
+.services{
+  padding:5rem 0;
+}
+.services_title{
+  text-align: center;
+}
+.services_title h3{
+  font-size:5rem;
+  font-weight:500;
+  margin-bottom: 2rem;
+}
+.service_title p{
+  font-size:2rem;
+  font-weight:300;
+  margin-bottom:2rem;
+}
+.services_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:5rem;
+ 
+}
+.services_card{
+  background:var(--gray);
+  padding:4rem;
+  border-radius:1rem;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.services_card span{
+  color:darkred;
+  font-size:3rem;
+  margin-bottom:1.5rem;
+  margin-right:20rem;
+}
+.services_card h4{
+  font-size:2.5rem;
+  margin-bottom:1.5rem;
+}
+.services_card p{
+  font-weight:300;
+  max-width:20rem;
+}
+  
+/* My Best Client */
+
+.client{
+  padding:5rem 0;
+}
+.client_title{
+  text-align: center;
+}
+.client_title h3{
+  font-size:7rem;
+  font-weight:700;
+}
+.client_title p{
+  font-weight:600;
+  padding:2rem;
+}
+.client_wrapper{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  justify-content:center;
+ 
+}
+.client_card{
+  background:black;
+  border:1px dotted var(--dark);
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.client_card span{
+ max-width:50rem;
+}
 
 
 
