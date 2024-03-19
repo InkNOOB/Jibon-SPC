@@ -356,6 +356,80 @@
  max-width:50rem;
 }
 
+/* My Latest Project */
+.latest{
+  padding: 5rem 0;
+}
+.latest_title h2{
+  font-size:6rem;
+  font-weight:600;
+}
+.latest_title p{
+  padding-bottom:5rem;
+  font-size:2rem;
+}
+.latest_wrapper span{
+  padding:20rem 10rem;
+}
+.latest_wrapper{
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  justify-content:center;
+  align-items:center;
+  gap:2rem;
+}
+.latest_title{
+
+  text-align:center;
+}
+
+.latest_card{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-image:url(/img/drowsycet.jpg);
+  background-size:cover;
+  text-align:center;
+}
+.latest_card span{
+  transform:translateY(17rem);
+}
+.latest_card small{
+  font-size:1.5rem;
+  color:var(--light);
+  font-weight:500;
+}
+.latest_card h2{
+  color:white;
+  font-size:3rem;
+  font-weight:700;
+  width:30rem;
+  padding-bottom:5rem;
+}
+.latest_card a:hover{
+  transition:.5s ease;
+  background:var(--dark);
+  color:white;
+}
+.latest_card a{
+  transition:.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   /* REPEATABLE PATTERNS */
